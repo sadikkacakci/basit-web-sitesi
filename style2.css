@@ -1,0 +1,181 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(148, 148, 148);
+}
+
+.header #title{
+    float:right;
+    font-size:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.container {
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.container .navbar {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+.container .navbar ul {
+    float: left;
+    margin-right: 30px;
+}
+
+.container .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.container .navbar ul li a:hover {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border-radius: 2px;
+}
+
+.container .navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Roboto;
+    padding: 6px 13px;
+}
+
+.container .navbar ul li:hover #dropdown {
+    /* li hover durumunda dropdown id'sini aktif et. */
+    display: block;
+}
+
+
+.container .navbar #dropdown {
+    position: absolute;
+    display: none;
+    /* dropdown menünün gösterilebilmesi için dispaly:block olması gerek. Bunu hover durumunda veya normal durumda belirt */
+    /* opacity:0 yaparak gösterilen dropdown'u göstermiyoruz. hover durumunda opacity:1 durumunda dropdown gösteriliyor. */
+    /* z-index: 1; */
+    background-color: rgb(124, 124, 124);
+    width: 100px;
+}
+
+.container .navbar #dropdown .dropdown-li {
+    /* dropdown elementlerinin alt alta dizilmesini sağlıyoruz. */
+    display: block;
+
+}
+
+.container .navbar .social-media {
+    margin-top: 8px;
+    float: right;
+}
+
+.container .navbar .social-media a {
+    padding: 5px;
+}
+
+
+.container .duyuru {
+    /* outline: dashed 5px black; */
+    background-color: rgb(154, 217, 247);
+    width: 96%;
+    height: 160px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
+.container .duyuru p {
+    color: rgb(18, 33, 79);
+    font-size: 18px;
+    margin-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .sorgu {
+    margin-top: 210px;
+    margin-left: 20px;
+    /* outline: dashed 5px black; */
+    width: 96%;
+    height: 180px;
+    outline: auto 1px rgb(188, 188, 188);
+    border-radius: 7px;
+}
+
+.container .sorgu #sorgu-tc-text {
+    height: 35px;
+    background-color: black;
+    /* outline: dashed 5px orange; */
+}
+
+.container .sorgu #sorgu-tc-text p {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    font-family: Calibri;
+    padding-top: 5px;
+}
+
+.container .sorgu #sorgu-tc-input{
+    margin-top: 25px;
+    margin-left: 20px;
+    height: 80px;
+    width: 40%;
+}
+
+.container .sorgu form label{
+    font-size:20px;
+    font-family: Calibri;
+}
+
+.container .sorgu form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* display: block; */
+}
+
+.container .sorgu #input-guvenlik-kodu{
+    height: 80px;
+    width: 40%;
+    margin-left:650px;
+    /* margin-top:25px; */
+    margin-top:-80px;
+}
+
+.container .sorgu #submit-button{
+    height: 80px;
+    width: 10%;
+    margin-top:-80px;
+    float: right;
+    margin-right: 50px;
+}
+
+.container .sorgu #submit-button input{
+    margin-top:18px;
+    margin-left: 25px;
+    height:40px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}

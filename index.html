@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Yapımı</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="resimler/bakanlik-logo.png" alt="" style="height:60px;width:200px;">
+        </a>
+        <p id="title">Hasar Tespit Sorgulama</p>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="anasayfa.html">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="data.html">Data</a>
+                    <div id="dropdown">
+                        <ul>
+                            <li class="dropdown-li">
+                                <a href="#">option1</a>
+                            </li>
+                            <li class="dropdown-li">
+                                <a href="#">option2</a>
+                            </li>
+                            <li class="dropdown-li">
+                                <a href="#">option3</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                </li>
+                <li>
+                    <a href="urunlerimiz.html">Ürünlerimiz</a>
+                </li>
+                <li>
+                    <a href="iletisim.html">İletişim</a>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.instagram.com/" class="social-media" target="_blank">
+                    <img src="resimler/instagram-logo.png" width="40px" height="40px">
+                </a>
+                <a href="https://www.youtube.com/" class="social-media" target="_blank">
+                    <img src="resimler/youtube-logo.png" width="40px" height="40px">
+                </a>
+            </div>
+        </div>
+
+        <div class="duyuru">
+            <h3 style="margin-left:15px;">Önemli Duyuru</h3>
+            <br>
+            <p>Tespitler sırasında afete maruz kalan vatandaşlarımızın bilgileri sisteme işlenmiştir. Bu bilgiler
+                mahalle, sokak ve bina numaraları ile eşleştirilmiş, internet üzerinden vatandaşımızın sorgulamasına
+                ve binalardaki hasara ilişkin fotoğraflara internet üzerinden erişmesine olanak sağlanmıştır.
+                Vatandaşlarımız <a href="hasartespit.csb.gov.tr">hasartespit.csb.gov.tr</a> adresi üzerinden adres
+                bilgileri ile sorgulama yaparak hasar
+                durumlarını öğrenebilirler. Hasar durumu, adres bilgisi, malik bilgisi ile ilgili itiraz etmek
+                isteyen vatandaşlarımız e-devlet üzerinden Hasar tespit sorgulama ve İtiraz işlemleri kısmından yada
+                kaymakamlıklara bizzat verecekleri dilekçelerde bina koduyla birlikte başvuruda bulunabilirler.
+                Sonuçlar 30 gün boyunca belirtilen internet adresleri ve mahalle muhtarlıklarında ilan edilmeye
+                devam edecektir. Vatandaşlarımız sonuçlar ilan edildiği tarihten itibaren 30 günlük süre içerisinde
+                itiraz talepleri için başvuruda bulunabilirler</p>
+        </div>
+
+        <div class="sorgu">
+            <div id="sorgu-tc-text">
+                <p>T.C. Kimlik No ile Sorgulama</p>
+            </div>
+            <div id="sorgu-tc-input">
+                <form action="">
+                    <label for="tc">T.C. Kimlik Numarası</label>
+                    <input type="text" id="tc">
+                </form>
+            </div>
+
+            <div id="input-guvenlik-kodu">
+                <form action="">
+                    <label for="tc">Güvenlik Kodu</label>
+                    <input type="text" id="tc">
+                </form>
+            </div>
+
+            <div id="submit-button">
+                <input type="submit" value="Sorgula">
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
